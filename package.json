@@ -16,7 +16,7 @@
   "scripts": {
     "docker:build": "docker build   --build-arg ENABLE_LOGGING=OFF   -t my-rime .",
     "docker:dev": "docker run -it -v \"$(pwd)/src:/my_rime/src:ro\" -p 5173:5173 my-rime npm run dev",
-    "docker:dist": "docker run -it -v \"$(pwd)/dist:/my_rime/dist\" my-rime npm run build && sudo chown -R $USER:`id -gn` dist/",
+    "docker:dist": "docker run -it -v \"$(pwd)/dist:/my_rime/dist\" my-rime npm run build",
     "submodule": "node --loader ts-node/esm scripts/update_submodule.ts",
     "worker": "rollup -c rollup.worker-config.js",
     "font": "node --loader ts-node/esm scripts/download_font.ts",
