@@ -40,9 +40,12 @@ RUN export PATH="$PATH:/emsdk/upstream/emscripten" && \
     pnpm run wasm
 
 # Build webapp
-RUN pnpm run build
+# RUN pnpm run build
+
+# EXPOSE 5173
+# ENTRYPOINT ["pnpm", "run", "dev"]
 
 
-FROM nginx:1.25.1-alpine-slim
+# FROM nginx:1.25.1-alpine-slim
 
-COPY --from=builder /my_rime/dist /usr/share/nginx/html
+# COPY --from=builder /my_rime/dist /usr/share/nginx/html

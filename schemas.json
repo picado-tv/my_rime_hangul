@@ -1,5 +1,14 @@
 [
   {
+    "id": "handarin",
+    "name": "한관화",
+    "group": "音码",
+    "emoji": true,
+    "target": "picado-tv/rime-handarin",
+    "dependencies": ["luna_pinyin"],
+    "license": "GPL-3.0-only"
+  },
+  {
     "id": "luna_pinyin",
     "name": "朙月拼音",
     "group": "音码",

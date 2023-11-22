@@ -55,7 +55,11 @@ const platforms: {
     title: 'Command Line',
     content: () => generateContent('librime', '中州韵输入法引擎', 'https://github.com/rime/librime')
   },
-  { icon: InternetExplorer, title: 'Web', description: 'My RIME ⭐ You are here' }
+  {
+    icon: InternetExplorer,
+    title: 'Web',
+    content: () => generateContent('My Rime', '梧桐输入法', 'https://github.com/LibreService/my_rime')
+  },
 ]
 </script>
 
