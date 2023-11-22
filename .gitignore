@@ -25,10 +25,10 @@ pnpm-lock.yaml
 *.sw?
 
 # wasm
-*.wasm
-public/rime.js
-public/rime.data
-public/ime
+# *.wasm
+# public/rime.js
+# public/rime.data
+# public/ime
 build
 
 *.js.map
