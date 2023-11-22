@@ -8,7 +8,7 @@ function getLanguage () {
       index = i
     }
   }
-  return language || 'zh-CN'
+  return language || 'zh-TW'
 }
 
 export { getLanguage }
