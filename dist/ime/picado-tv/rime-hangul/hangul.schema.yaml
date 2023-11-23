@@ -8,7 +8,7 @@ emoji_suggestion:
 engine:
   filters:
     - "simplifier@emoji_suggestion"
-    - "reverse_lookup_filter@hangul_reverse_lookup"
+    - "reverse_lookup_filter@handarin_reverse_lookup"
   processors:
     - ascii_composer
     - recognizer
@@ -89,8 +89,6 @@ key_binder:
     - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
     - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
     - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
-    - {accept: KP_Enter, send: confirm, when: has_menu}
-    - {accept: KP_Space, send: noop, when: has_menu}
   import_preset: default
 menu:
   page_size: 5
@@ -179,7 +177,7 @@ schema:
   description: "한국어를 위한 라임 스키마"
   name: "도한글"
   schema_id: hangul
-  version: 0.9
+  version: 0.9.231123
 speller:
   algebra:
     - "abbrev/^([A-Za-z]).+$/$1/"
@@ -200,8 +198,7 @@ switches:
     states: ["🈚︎", "🈶️"]
 translator:
   dictionary: hangul
-  disable_user_dict_for_patterns:
-    - "^.*$"
+  enable_user_dict: false
   preedit_format:
     - "xlit|rsefaqtdwczxvgQWERT|ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎㅃㅉㄸㄲㅆ|"
     - "xlit|yuiophjklbnmOP|ㅛㅕㅑㅐㅔㅗㅓㅏㅣㅠㅜㅡㅒㅖ|"
