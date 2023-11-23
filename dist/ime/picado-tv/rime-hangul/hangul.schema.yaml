@@ -1,5 +1,9 @@
 __build_info:
   rime_version: 1.8.5
+ascii_composer:
+  switch_key:
+    Shift_L: noop
+    Shift_R: noop
 emoji_suggestion:
   inherit_comment: false
   opencc_config: emoji.json
@@ -177,7 +181,7 @@ schema:
   description: "한국어를 위한 라임 스키마"
   name: "도한글"
   schema_id: hangul
-  version: 0.9.231123
+  version: 0.9.231123.1
 speller:
   algebra:
     - "abbrev/^([A-Za-z]).+$/$1/"
