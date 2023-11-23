@@ -5,7 +5,6 @@
     "group": "시연대상",
     "emoji": true,
     "variants": [],
-    "extended": true,
     "target": "picado-tv/rime-hangul",
     "dependencies": ["handarin"],
     "license": "GPL-3.0-only"
