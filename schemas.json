@@ -1,8 +1,19 @@
 [
   {
+    "id": "hangul",
+    "name": "도한글",
+    "group": "시연대상",
+    "emoji": true,
+    "variants": [],
+    "extended": true,
+    "target": "picado-tv/rime-hangul",
+    "dependencies": ["handarin"],
+    "license": "GPL-3.0-only"
+  },
+  {
     "id": "handarin",
     "name": "한관화",
-    "group": "音码",
+    "group": "시연대상",
     "emoji": true,
     "target": "picado-tv/rime-handarin",
     "dependencies": ["luna_pinyin"],
