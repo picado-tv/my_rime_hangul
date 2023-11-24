@@ -69,7 +69,7 @@ const options = [
       <tbody>
         <tr>
           <td>순한글단어</td>
-          <td>띄어쓰기 전까지 글을 쓴 후 한자번호를 누르고 1누르고 스페이스 누르기</td>
+          <td>띄어쓰기 전까지 글을 쓴 후 한자번호 누르고 1누르고 스페이스 누르기</td>
           <td><n-text code>보세요 (1 space) </n-text></td>
         </tr>
         <tr>
