@@ -181,10 +181,11 @@ schema:
   description: "한국어를 위한 라임 스키마"
   name: "도한글"
   schema_id: hangul
-  version: 0.9.231123.1
+  version: 0.9.231124
 speller:
   algebra:
     - "abbrev/^([A-Za-z]).+$/$1/"
+    - "abbrev/[rsefaqtdwczxvgQWERT]([yuiophjklbnmOP]+)$/$1/"
   alphabet: "zyxwvutsrqponmlkjihgfedcba QWERTOP"
   delimiter: " '"
 switches:

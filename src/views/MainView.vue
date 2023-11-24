@@ -88,9 +88,11 @@ const AsyncEditor = defineAsyncComponent(() => import('../components/MyEditor.vu
       :debug-mode="simulator?.debugMode"
     />
     <my-appearance />
+    <!--
     <my-font />
     <my-deployer />
     <micro-plum />
+    -->
     <n-space style="align-items: center">
       <h3>Advanced</h3>
       <n-switch
