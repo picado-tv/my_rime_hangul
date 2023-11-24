@@ -26,7 +26,7 @@ const options = [
       본 입력기는 외국어입력기로서 개발된 오픈소스를 개량해 사용하는 점과 한자어를 자동완성하는 기능으로 인해 일반적인 한국어입력 키보드와 사용법이 조금 다릅니다. 연락처를 통해 의견주시면 개선에 참고하겠습니다.
     </n-p>
     <n-p style="font-size: larger; font-weight: bold">선택모드 조작법</n-p>
-    <n-p>기본적으로 한국어를 입력하면 선택모드가 시작되어 한글 및 상용한자어를 선택할 수 있습니다.</n-p>
+    <n-p>기본적으로 한국어를 입력하면 선택모드가 시작되어 한글단어, 기초한자(1,800자), 상용한자어(약 20만)를 선택할 수 있습니다.</n-p>
     <n-table>
       <thead>
         <tr>
@@ -53,10 +53,10 @@ const options = [
         </tr>
       </tbody>
     </n-table>
-<!-- 
+ 
     <n-p style="font-size: larger; font-weight: bold">전문한자모드 조작법</n-p>
-    <n-p><n-text code>`</n-text> 기호 (Backquote) 를 누르면 전문한자모드를 시작합니다. 전문한자모드에서는 한글자한자 및 더 다양한 어휘를 선택할 수 있습니다.</n-p>
- -->
+    <n-p><n-text code>`</n-text> 기호 (Backquote) 를 누르면 전문한자모드를 시작합니다. 전문한자모드에서는 모든 한자와 더 다양한 한자어휘를 선택할 수 있습니다.</n-p>
+
     <n-p style="font-size: larger; font-weight: bold">편리한 사용법</n-p>
     <n-table>
       <thead>
