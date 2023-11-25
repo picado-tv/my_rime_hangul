@@ -46,7 +46,7 @@ const osThemeRef = useOsTheme()
       <template #footer>
         <div class="my-footer">
           <p> The Web IME is forked from <a class="n-a" href="https://github.com/LibreService/my_rime/commit/8bd65bd024189bdd7aad0b987d0b727a292d9ee0" target="_blank" style="--n-text-color: #18a058; --n-bezier: cubic-bezier(.4, 0, .2, 1);">My Rime</a></p>
-          <p> Commit <a class="n-a" href="https://github.com/LibreService/my_rime/commit/8bd65bd024189bdd7aad0b987d0b727a292d9ee0" target="_blank" style="--n-text-color: #18a058; --n-bezier: cubic-bezier(.4, 0, .2, 1);">8bd65bd</a> · Built at 11/22/2023, 6:53:37 AM</p>
+          <p> Commit <a class="n-a" href="https://github.com/picado-tv/my_rime_hangul/commit/__COMMIT__" target="_blank" style="--n-text-color: #18a058; --n-bezier: cubic-bezier(.4, 0, .2, 1);">{{ "__COMMIT__".slice(0, 7) }}</a> · Built at __BUILD_DATE__ </p>
         </div>
       </template>
     </my-layout>
