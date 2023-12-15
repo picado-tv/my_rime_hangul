@@ -12,7 +12,7 @@ emoji_suggestion:
 engine:
   filters:
     - "simplifier@emoji_suggestion"
-    - "reverse_lookup_filter@handarin_reverse_lookup"
+    - "reverse_lookup_filter@hangul_reverse_lookup"
   processors:
     - ascii_composer
     - recognizer
@@ -46,17 +46,25 @@ handarin:
     - "xform|ㅜㅔ|ㅞ|"
     - "xform|ㅜㅣ|ㅟ|"
     - "xform|ㅡㅣ|ㅢ|"
+    - "xlit|NMJKL|乙一丿丶丨|"
   prefix: "`"
   suffix: ";"
   tag: handarin
   tips: "〔漢字〕"
-handarin_reverse_lookup:
+hangul_reverse_lookup:
   comment_format:
     - "xform/$/〕/"
     - "xform/^/〔/"
     - "xlit|rsefaqtdwczxvgQWERT|ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅋㅌㅍㅎㅃㅉㄸㄲㅆ|"
     - "xlit|yuiophjklbnmOP|ㅛㅕㅑㅐㅔㅗㅓㅏㅣㅠㅜㅡㅒㅖ|"
-  dictionary: hangul.hanja
+    - "xform|ㅗㅏ|ㅘ|"
+    - "xform|ㅗㅐ|ㅙ|"
+    - "xform|ㅗㅣ|ㅚ|"
+    - "xform|ㅜㅓ|ㅝ|"
+    - "xform|ㅜㅔ|ㅞ|"
+    - "xform|ㅜㅣ|ㅟ|"
+    - "xform|ㅡㅣ|ㅢ|"
+  dictionary: hangul
   overwrite_comment: true
   tags:
     - handarin
@@ -181,7 +189,7 @@ schema:
   description: "한국어를 위한 라임 스키마"
   name: "도한글"
   schema_id: hangul
-  version: 0.9.231124
+  version: 1.0.231215
 speller:
   algebra:
     - "abbrev/^([A-Za-z]).+$/$1/"
