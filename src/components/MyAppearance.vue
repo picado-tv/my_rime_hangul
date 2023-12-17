@@ -84,32 +84,50 @@ const options = [
       </tbody>
     </n-table>
 
-    <n-p style="font-size: larger; font-weight: bold">전문한자모드 조작법</n-p>
+    <n-p style="font-size: larger; font-weight: bold">다양한 한자 입력 방법</n-p>
     <n-p><n-text code>`</n-text> 기호 (Backquote) 를 누르면 전문한자모드를 시작합니다. 전문한자모드에서는 모든 한자와 더 다양한 한자어휘를 선택할 수 있습니다.</n-p>
-    <img src="https://github.com/picado-tv/rime-handarin/blob/master/keyboard-2set.png?raw=true" alt="한다린 키보드 레이아웃" />
+    <figure>
+      <img src="https://github.com/picado-tv/rime-handarin/blob/master/keyboard-2set.png?raw=true" alt="한다린 키보드 레이아웃 (https://github.com/picado-tv/handarin)" />
+    </figure>
     <n-table>
       <thead>
         <tr>
-          <th>조작키</th>
-          <th>역할</th>
+          <th>경우</th>
+          <th>입력방법</th>
           <th>예시</th>
+          <th>비고</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td>기본 녹색과 붉은색 자판 <n-text type="primary">[ㄱㄴㄷㄹ...</n-text><n-text type="error">ㅏㅑㅓㅕ...</n-text>]</td>
-          <td>한자음으로 찾기</td>
+          <td>기초한자 (1800자)</td>
+          <td>한자음 입력: 녹색과 붉은색 자판 <n-text type="primary">[ㄱㄴㄷㄹ...</n-text><n-text type="error">ㅏㅑㅓㅕ...</n-text>]</td>
+          <td>金: <n-text code>김 2</n-text></td>
+          <td><n-a href="https://ko.wiktionary.org/wiki/%EB%B6%80%EB%A1%9D:%ED%95%9C%EB%AC%B8_%EA%B5%90%EC%9C%A1%EC%9A%A9_%EA%B8%B0%EC%B4%88_%ED%95%9C%EC%9E%90_1800">교육부 지정</n-a></td>
+        </tr>
+        <tr>
+          <td>상용한자어 (약 20만 단어)</td>
+          <td>위와 같음</td>
+          <td>大韓民國: <n-text code>대한민국 2</n-text></td>
+          <td>국립국어원 표준국어대사전 표제어</td>
+        </tr>
+        <tr>
+          <td>모든한자</td>
+          <td><n-text code>`</n-text><n-icon size="12" :component="Add12Filled" />위와 같음</td>
           <td>喝: <n-text code>`갈</n-text><br />兀: <n-text code>`올</n-text></td>
+          <td><!--empty--></td>
         </tr>
         <tr>
-          <td>시프트키 <n-icon size="12" :component="Add12Filled" /> 청색 자판 <n-text type="info">[丿丶丨乙一]</n-text></td>
-          <td>필순으로 입력하여 모든 한자 입력하는 법, 참고: <n-a href="https://ko.wikipedia.org/wiki/%EC%98%A4%ED%95%84%ED%99%94%EC%88%98%EC%9E%85%EB%B2%95">위키백과[오필화수입법]</n-a></td>
-          <td>石: <n-text code>`一丿丨乙一</n-text><br />乭: <n-text code>`一丿丨乙一乙</n-text></td>
+          <td>필순으로 입력</td>
+          <td>시프트키 <n-icon size="12" :component="Add12Filled" />청색 자판 <n-text type="info">[丿丶丨乙一]</n-text></td>
+          <td>石: <n-text code>一丿丨乙一</n-text><br />乭: <n-text code>一丿丨乙一乙</n-text></td>
+          <td>입력 방법: <n-a href="https://ko.wikipedia.org/wiki/%EC%98%A4%ED%95%84%ED%99%94%EC%88%98%EC%9E%85%EB%B2%95">[오필획수입법]</n-a></td>
         </tr>
         <tr>
-          <td><n-text code>밖</n-text></td>
-          <td>한국 한자음이 없는 한자(𠦌)나 원래 음이 없는 한자 등등 목록</td>
-          <td>약 16,000여개의 한자 수록 (비사용권장)</td>
+          <td>필순으로 입력 (자동완성)</td>
+          <td><n-text code>`</n-text><n-icon size="12" :component="Add12Filled" />청색 자판 <n-text type="info">[丿丶丨乙一]</n-text></td>
+          <td>平: <n-text code>`一丶 2</n-text></td>
+          <td>위와 같음: <n-a href="https://ko.wikipedia.org/wiki/%EC%98%A4%ED%95%84%ED%99%94%EC%88%98%EC%9E%85%EB%B2%95">[오필획수입법]</n-a></td>
         </tr>
       </tbody>
     </n-table>
